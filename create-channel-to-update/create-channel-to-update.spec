@@ -1,6 +1,6 @@
 Name:		create-channel-to-update
 Version:	0.1
-Release:	0%{?dist}
+Release:	1%{?dist}
 Summary:	create or upgrade channel to specific revision level on RHN Satellite
 
 Group:		Admin
@@ -357,4 +357,7 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Wed Jul 21 2010 Paul Morgan <pmorgan@redhat.com> 0.1-1
+- new package built with tito
+
 
