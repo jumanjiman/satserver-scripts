@@ -13,10 +13,10 @@ buildarch:	noarch
 # 
 # note: perl provides Data::Dumper and CGI
 BuildRequires:	perl
-BuildRequires:	perl-Frontier-RPC-Client.noarch
+BuildRequires:	perl-Frontier-RPC-Client
 
 Requires:		perl
-Requires:		perl-Frontier-RPC-Client.noarch
+Requires:		perl-Frontier-RPC-Client
 
 %description
 This script can create a channel to a specific update level
