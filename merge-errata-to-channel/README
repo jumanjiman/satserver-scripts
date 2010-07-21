@@ -1,0 +1,17 @@
+merge-errata-to-channel
+by: Brent Holden <bholden@redhat.com>
+
+
+Description:
+	The purpose of this script is to be able to take two channels, an end date, and optionally a beginning date, and merge errata from both channels.
+
+For help, simply run ./merge-errata-to-channel --help
+
+In addition to the script, you should find in this directory:
+README  - This file
+
+
+Changelog:
+
+9/9/09 - 1.0
+- Initial release

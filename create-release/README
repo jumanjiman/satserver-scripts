@@ -1,0 +1,78 @@
+Create release channel
+by: Brent Holden <bholden@redhat.com>
+
+
+Description:
+	This program is originally based on Justin Sherrill's create-channel-to-update.pl which required the user to download RPMs and import them.
+
+	The purpose of this script can create a channel to a specific update level (i.e. RHEL4u3) when given a package manifest list in text format
+	(included in /data directory).
+
+
+For help, simply run ./create-release --help or ./create-release with no options
+
+In addition to the script, you should find in this directory:
+data/   - Data files for all of the update releases.
+README  - This file
+COPYING - GPLv2 under which this program is licensed
+
+
+Changelog:
+
+1/30/09 - 1.0
+- Initial release
+	* Supports creating release channels for multiple arches
+	* Supports nesting of created channels
+	* Validity checking for single arch support within a manifest
+
+6/14/09 - 1.1
+- Bugfixes
+	* Bugfix: Better XMLRPC lib fault checking on login
+	* Bugfix: Satellite version checking
+	* Bugfix: Specify types for optparse for python 2.6
+	* Bugfix: Bumped default chunk down to 150 from 500 to avoid:
+		(70007)The timeout specified has expired: ajp_ilink_receive() can't receive header
+- Additions
+	* Added 5-U3-Server* file manifests created from DVDs
+	* Retry on XMLRPC failure during RPC post (3 tries)
+	* Added definitions for RHEL5 i386 and x86-64
+
+
+9/8/09 - 1.1.1
+- Bugfixes
+	* Bugfix: API change to rename channel_label key in listSoftwareChannels to label in Satellite 5.3
+
+- Additions
+	* Added: 5-U4-Server_x86-64 definitions for server, vt, cluster, and clusterstorage
+
+
+9/9/09 - 1.2
+- Bugfixes
+	* Coding style: change from 8-space tabs to 4-space indentations
+
+- Additions
+	* Added: New -r,--redhat-only switch for ability to only search Red Hat channels (only with Satellite >=5.3)
+
+
+9/10/09 - 1.2.1
+- Bugfixes
+	* Changed location of getpass call for consistency
+
+
+9/22/09 - 1.2.2
+- Bugfixes
+	* Fixed typos
+
+9/23/09	- 1.3
+- Bugfixes
+	* Numerous code speedups in findPackageIDs()
+	* Top level try instead of try:except for each function
+
+- Additions
+	* Minimum supported version of Satellite is 5.1
+	* Added delete option to remove channel prior to creation
+	* Added clone option to clone channel instead of creating it
+
+6/29/10 - 1.3.1
+- Additions
+	* Added definitions for 5-U4-i386-Server*

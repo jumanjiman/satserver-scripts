@@ -1,0 +1,5 @@
+Hostname,CPU,Memory,Vendor,Arch,Base Channel,Type,Running Kernel
+avatar.tenpointone.com,QEMU Virtual CPU version 0.9.1,498,Red Hat Enterprise Virtualization Hypervisor 5.4-2.1-3,x86_64,tpo-release-5-u4-server-x86_64-prod-1,virtual,2.6.18-164.el5
+polaris.tenpointone.com,Intel(R) Atom(TM) CPU  330   @ 1.60GHz,3270,To Be Filled By O.E.M. To Be Filled By O.E.M.,x86_64,tpo-release-5-u4-server-x86_64-prod-1,physical,2.6.18-164.el5
+novalis.tenpointone.com,QEMU Virtual CPU version 0.9.1,498,Red Hat Enterprise Virtualization Hypervisor 5.4-2.1-3,x86_64,tpo-release-5-u4-server-x86_64-prod-1,virtual,2.6.18-164.el5
+saltpillar.tenpointone.com,QEMU Virtual CPU version 0.9.1,498,Red Hat Enterprise Virtualization Hypervisor 5.4-2.1-3,x86_64,tpo-release-5-u4-server-x86_64-prod-1,virtual,2.6.18-164.el5

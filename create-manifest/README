@@ -1,0 +1,20 @@
+Create manifest file
+by: Brent Holden <bholden@redhat.com>
+
+
+Description:
+	The purpose of this script is to create a manifest programmatically using the local RPM database that you can feed into create-release
+	
+
+
+For help, simply run ./create-manifest --help
+
+In addition to the script, you should find in this directory:
+README  - This file
+
+
+Changelog:
+
+2/20/09 - 1.0
+- Initial release
+	* Support reading RPM db locally and creating manifest file based on installed packages

@@ -1,0 +1,18 @@
+Channel synchronization auto restart script
+by: Brent Holden <bholden@redhat.com>
+
+
+Description:
+	The purpose of this script is to continue a satellite sync from a cronjob in the case that the synchronization is broken due to a timeout.
+
+
+For help, simply run ./chansync.sh
+
+In addition to the script, you should find in this directory:
+README  - This file
+
+
+Changelog:
+
+2/20/09 - 1.0
+- Initial release
