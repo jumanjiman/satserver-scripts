@@ -1,0 +1,9 @@
+You MUST edit create-channel-to-update.pl to change
+some hard-coded variables, copied here for example:
+
+#START EDITABLE OPTIONS
+$SERVER="satserver.example.com";
+$USERNAME="admin";
+$PASSWORD='changeme';
+$DEBUG=0;
+#END EDITABLE OPTIONS

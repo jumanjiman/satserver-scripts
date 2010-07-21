@@ -23,6 +23,9 @@ This script can create a channel to a specific update level
 (i.e. RHEL4u3) or upgrade an existing channel to a higher update
 level on an RHN Satellite.
 
+Note that you must edit variables in create-channel-to-update.pl
+before using.
+
 
 
 %prep
@@ -47,6 +50,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
+%doc src/README.first
 %doc src/README.help
 %doc src/COPYING
 %doc src/README

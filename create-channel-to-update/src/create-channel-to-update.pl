@@ -5,6 +5,13 @@ use Data::Dumper;
 use CGI;
 
 
+#START EDITABLE OPTIONS
+$SERVER="satserver.example.com";
+$USERNAME="admin";
+$PASSWORD='changeme';
+$DEBUG=0;
+#END EDITABLE OPTIONS
+
 # @author Justin Sherrill jsherril@redhat.com
 #TODO
 #  Add better error handling
@@ -17,16 +24,9 @@ use CGI;
 
 
 
-#START EDITABLE OPTIONS
-$SERVER="dually.rdu.redhat.com";
-$USERNAME="admin";
-$PASSWORD='redhat';
-#END EDITABLE OPTIONS
 
 
 
-
-$DEBUG=0;
 
 $new_channel_label = $ARGV[5];
 
